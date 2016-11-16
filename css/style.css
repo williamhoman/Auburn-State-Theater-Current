@@ -1,0 +1,807 @@
+/*-----------------------------------------------------
+FONTS
+-----------------------------------------------------*/
+@font-face {
+  font-family: avenida;
+  src: url("fonts/AvenidaPlain.otf");
+}
+
+@font-face {
+  font-family: forum;
+  src: url("fonts/Forum-Regular.otf");
+}
+
+/*-----------------------------------------------------
+BASIC SETUP
+-----------------------------------------------------*/
+
+html {
+  font-size: 18px;
+  font-family: play;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /*background-color: #343a40;*/
+  background-image: url(../img/auburn-state-back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+h1, h2, h3, h4, h5, h6, nav, p, a, ul, ol, li, small {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+  /*-----------------------------------------------------
+  NAVIGATION
+  -----------------------------------------------------*/
+nav {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  border-bottom: 3px solid #808286;
+  background-color: #404144;
+
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 20px 20px 30px 20px;
+  text-decoration: none;
+  margin-bottom: -30px;
+  font-size: 1.1em;
+}
+
+.nav-selected {
+  color: #FFC540;
+}
+
+nav a:hover {
+  color: #FFC540;
+}
+
+/*-----------------------------------------------------
+Now Playing
+-----------------------------------------------------*/
+
+.main-title {
+  padding: 20px;
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  color: #FFC540;
+  font-family: Avenida;
+  letter-spacing: 0.2em;
+}
+
+.nav-links {
+  display: inline-block;
+}
+
+.content {
+
+  margin: 0 auto;
+  width: 915px;
+  border: 3px solid #808286;
+  color: #000;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  background-color: #FFC540;
+
+}
+.video-container {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.movie-listing {
+  background-color: #FFC540;
+  height: 300px;
+  text-align: center;
+  font-family: forum;
+  margin-top: -3px;
+  padding-top: 40px;
+}
+
+.movie-title {
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 58px;
+  padding-bottom: 10px;
+}
+
+.movie-listing p {
+  font-size: 28px;
+}
+
+
+.time-listing {
+  margin-top: -120px;
+  text-align: center;
+  font-family: forum;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.husker-football {
+  width:915px;
+  border: 3px solid #808286;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #404144;
+}
+
+.husker-football h1 {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.husker-football p,ul {
+  font-size: 26px;
+
+}
+
+.husker-football ul{
+  padding: 30px;
+  list-style: none;
+}
+
+.husker-dates {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.download-app {
+  height:160px;
+  width:915px;
+  border: 3px solid #808286;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  padding: 20px 0;
+  background-color: #404144;
+
+
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.download-btn a:hover {
+  color: #FFC540;
+}
+
+.download-app p {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #e3bc17;
+}
+
+.ios-app {
+  margin-right: 30px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 15px 15px 15px;
+  border: 2px solid #808286;
+  font-size: 24px;
+  color: #e3bc17;
+  border-radius: 5px;
+}
+
+.section-times {
+  max-width: 915px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+}
+
+.show-times {
+  display: inline-block;
+  background-color: #404144;
+  width: 27%;
+  height: 320px;
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 25px;
+  border: 3px solid black;
+  font-size: 20px;
+  border: 3px solid #808286;
+}
+
+.show-times h1 {
+  font-size: 28px;
+  padding: 20px;
+}
+
+
+.show-times-times p {
+  padding-bottom: 20px;
+}
+
+.showing-title {
+  color: #e3bc17;
+}
+
+.show-times-one{
+  padding-bottom: 20px;
+}
+
+/*-----------------------------------------------------
+FOOTER
+-----------------------------------------------------*/
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #404144;
+  margin-top: 30px;
+}
+
+.footer-link {
+  width: 915px;
+  margin: 0 auto;
+  padding-top: 10px;
+  font-size: 0.7em;
+  font-family: Arial;
+
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #e3bc17;
+}
+
+/*-----------------------------------------------------
+NOW PLAYING
+-----------------------------------------------------*/
+
+.now-playing {
+  width: 915px;
+  margin: 0 auto;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.now-playing h1 {
+  padding-top: 20px;
+  font-size: 2.6em;
+}
+
+.now-playing h2 {
+  padding-top: 20px;
+  font-size: 2.3em;
+  font-family: forum;
+  padding-bottom: 5px;
+}
+
+.now-playing p {
+  font-family: helvetica;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.thursday {
+  padding: 30px 0;
+  font-family: avenida;
+  font-size: 0.6;
+}
+
+.thursday p{
+  font-family: forum;
+  font-size: 0.6;
+}
+
+.movie-box {
+  margin-top: 40px;
+}
+
+
+.nebraska-logo {
+  font-family: forum;
+  font-size: 0.9em;
+}
+
+.nebraska-logo img {
+  padding: 50px;
+}
+
+.saturday-info {
+  padding-bottom: 20px;
+}
+/*-----------------------------------------------------
+COMING SOON
+-----------------------------------------------------*/
+.coming-soon {
+    width: 915px;
+    margin: 0 auto;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.coming-soon h1 {
+  font-size: 2.4em;
+  padding: 30px 0;
+
+}
+
+.coming-box {
+  width:100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.coming-box h2 {
+  font-size: 2em;
+  font-family: forum;
+  padding-bottom: 20px;
+}
+
+
+/*-----------------------------------------------------
+SAVE THE STATE
+-----------------------------------------------------*/
+
+.save-state {
+    width: 915px;
+    margin: 0 auto;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 40px;
+    text-align: center;
+    height: 2440px;
+}
+
+.save-state h1 {
+  text-align: left;
+  font-size: 2.6em;
+  padding: 30px 0 20px 20px;
+}
+
+.update-div {
+  max-width: 410px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.update {
+  background-color: #404144;
+  margin-left: -20px;
+}
+
+.update h2 {
+  font-size: 2.6em;
+  text-align: left;
+  color: #e3bc17;
+  padding: 20px 0 20px 20px;
+}
+
+.update p {
+  color: #fff;
+  padding: 20px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.state-info {
+
+  font-family: helvetica;
+  font-weight: 300;
+}
+
+.state-info p {
+  padding: 20px 0;
+  font-size: 0.8em;
+  text-align: left;
+  margin-left: -20px;
+}
+
+.state-info p img {
+  text-align: left;
+}
+
+.state-picts img {
+  float: left;
+  margin-left: -20px;
+  padding-bottom: 30px;
+}
+.donor-names {
+  display: inline-block;
+  max-width: 410px;
+  float: right;
+}
+
+.donor-names h3{
+  font-size: 1.1em;
+  font-family: helvetica;
+  font-weight: 300;
+  padding: 0 15px 30px 15px;
+}
+
+.donor-names li {
+  font-size: 14px;
+  text-align: left;
+  font-family: helvetica;
+  font-weight: 300;
+  padding-right: 20px;
+}
+
+.special-thanks {
+  margin-top: 20px;
+}
+/*-----------------------------------------------------
+CONTACT
+-----------------------------------------------------*/
+
+.auburn-contact {
+  width: 915px;
+  margin: 0 auto;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 40px;
+  text-align: center;
+  height: 760px;
+}
+
+.address {
+  background-image: url(../img/exterior.jpg);
+  height: 510px;
+  text-align: left;
+}
+
+.address h1 {
+  font-family: forum;
+  font-size: 2.5em;
+  color: #e3bc17;
+  letter-spacing: 0.1;
+  padding: 20px;
+
+}
+
+.address p {
+  font-family: helvetica;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.address p:last-of-type {
+  padding-top: 40px;
+}
+
+.contact-form h1 {
+  font-size: 2.6em;
+  text-align: left;
+  padding: 20px;
+}
+
+form {
+  max-width: 900px;
+  margin: 5px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  display: block;
+  margin-top: -16px;
+  width: 47%;
+  color: #fff;
+  background-color: #404144;
+  border: 0;
+}
+
+#input-send {
+  color: #fff;
+  background-color: #727377;
+  cursor: pointer;
+  margin-bottom: 40px;
+  width: 10%;
+  float: right;
+
+}
+
+#input-message {
+  height: 90px;
+  display: block;
+  float: right;
+  margin-top: -140px;
+  background-color: #404144;
+  color: #fff;
+
+}
+.half-form {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.right-form {
+  width: 100%;
+
+}
+
+.left-form {
+  margin-right: 2%;
+
+}
+
+#input-send {
+
+}
+@media (max-width: 360px) {
+  .content {
+    width: 320px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .main-title {
+    font-size: 2.3em;
+  }
+  .movie-listing {
+
+    height: 300px;
+    text-align: center;
+    font-family: forum;
+    margin-top: -3px;
+    padding-top: 40px;
+  }
+  .movie-listing h1 {
+    font-size: 32px;
+  }
+  .husker-football {
+    width: 320px;
+    }
+  .husker-football p, ul {
+      font-size: 18px;
+  }
+  .download-app {
+    width: 320px;
+  }
+
+  .show-times {
+    width: 320px;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.now-playing {
+    width: 320px;
+}
+.coming-soon {
+    width: 320px;
+}
+.save-state {
+    width: 320px;
+  height: 4500px;
+}
+.save-state h1 {
+    text-align: center;
+}
+.state-picts img {
+    width: 290px;
+}
+.update-div {
+    width: 250px;
+}
+.donor-names {
+  width:250px;
+  margin-right: 20px;
+
+}
+}
+
+
+@media (min-width: 480px) {
+  .content {
+    width: 460px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .main-title {
+    font-size: 2.3em;
+  }
+  .movie-listing {
+    background-color: #FFC540;
+    height: 300px;
+    text-align: center;
+    font-family: forum;
+    margin-top: -3px;
+    padding-top: 40px;
+  }
+  .movie-listing h1 {
+    font-size: 32px;
+  }
+  .husker-football {
+    width: 460px;
+    }
+  .husker-football p, ul {
+      font-size: 18px;
+  }
+  .download-app {
+    width: 460px;
+  }
+
+  .show-times {
+    width: 430px;
+    margin-left: 10px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.now-playing {
+    width: 440px;
+}
+.coming-soon {
+    width: 440px;
+}
+.save-state {
+    width: 440px;
+  height: 4000px;
+}
+.save-state h1 {
+    text-align: center;
+}
+.update-div {
+    width: 360px;
+}
+.state-picts img {
+    width: auto;
+}
+.auburn-contact {
+  width:400px;
+}
+}
+@media (min-width: 768px) {
+  .content { width: 720px; }
+  .husker-football { width: 720px;}
+  .show-times { width: 720px;}
+    .download-app {
+      width: 720px;
+    }
+    .husker-dates {
+    margin: 0 auto;
+    }
+    .nav-links {
+      display: inline-block;
+    }
+    .main-title {
+      font-size: 2.8em;
+    }
+    .movie-listing h1 {
+      font-size: 48px;
+    }
+    .husker-football p, ul {
+        font-size: 24px;
+    }
+
+    .show-times {
+    height: auto;
+    padding: 0 0 20px 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.now-playing {
+    width: 720px;
+}
+.now-playing h1 {
+    font-size: 2.2em;
+}
+.coming-soon {
+  width: 720px;
+}
+
+.save-state {
+    width: 720px;
+  height: 3900px;
+}
+
+.donor-names {
+    float: none;
+}
+.update-div {
+    width: 360px;
+}
+.save-state h1 {
+    text-align: left;
+}
+.auburn-contact {
+  width:680px;
+}
+}
+
+
+@media (min-width: 992px) {
+  .husker-football { width: 720px; }
+
+  .content { width: 720px; }
+
+  .show-times {
+        height: auto;
+        padding: 0 0 20px 0;
+        margin-left: 95px;
+        margin-bottom: 30px; }
+  .save-state {
+        width: 915px;
+        height: 2300px; }
+  .donor-names {
+    float: right; }
+  .auburn-contact { width: 915px; }
+}
+
+@media (min-width: 1200px) {
+  .husker-football { width: 915px; }
+  .content { width: 915px; }
+  .download-app {
+    width: 915px;
+  }
+  .show-times {
+    display: inline-block;
+    width: 27%;
+    height: 320px;
+    padding: 5px 10px;
+    margin-left: 5px;
+
+  }
+
+  .section-times {
+      max-width: 940px;
+      margin: 0 auto;
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  .now-playing {
+      width: 915px;
+  }
+  .now-playing h1 {
+      font-size: 2.6em;
+  }
+  .coming-soon {
+    width: 915px;
+}
+.save-state {
+    width: 915px;
+
+}
+.donor-names {
+    float: right;
+}
+
+.auburn-contact {
+    width: 915px;
+
+}
+}
